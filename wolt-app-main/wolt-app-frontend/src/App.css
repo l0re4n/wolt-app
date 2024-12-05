@@ -1,0 +1,271 @@
+/* Основной стиль */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  color: #333;
+}
+
+.AppWrap {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+header.AppHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.AppHeader h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #333;
+}
+
+.BackButton {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.BackButton:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-2px);
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #218838;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Модульные заголовки */
+h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Кнопка для оформления заказа */
+.place-order-button {
+  background-color: #28a745; /* Зеленый */
+  color: white;
+}
+
+.place-order-button:hover {
+  background-color: #218838; /* Темный зеленый */
+}
+
+/* Кнопка для возврата к блюдам */
+.back-to-dishes-button {
+  background-color: transparent;
+  color: #007bff; /* Синий */
+  border: 2px solid #007bff;
+}
+
+.back-to-dishes-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Кнопка для очистки корзины */
+.clear-cart-button {
+  background-color: #dc3545; /* Красный */
+  color: white;
+}
+
+.clear-cart-button:hover {
+  background-color: #c82333; /* Темный красный */
+}
+
+/* Кнопки для выбора ресторана */
+button.select-restaurant {
+  background-color: #007bff; /* Синий */
+  color: white;
+  border: none;
+}
+
+button.select-restaurant:hover {
+  background-color: #0056b3;
+}
+
+/* Кнопки для добавления в корзину */
+button.add-to-cart {
+  background-color: #ffc107; /* Желтый */
+  color: white;
+}
+
+button.add-to-cart:hover {
+  background-color: #e0a800;
+}
+
+.buttons-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons-wrap > button {
+  margin-right: 30px;
+}
+
+/* Стили для всей формы оплаты */
+.payment-form {
+  background-color: #f8f9fa; /* Светлый фон */
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.payment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.payment-form div {
+  margin-bottom: 20px;
+  display: grid;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px; /* Добавлен отступ снизу для разделения с соседними элементами */
+}
+
+.payment-form input:focus {
+  border-color: #28a745; /* Зеленая обводка при фокусе */
+  outline: none;
+}
+
+.payment-form .submit-payment-button {
+  background-color: #28a745; /* Зеленая кнопка */
+  color: white;
+  padding: 15px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form .submit-payment-button:hover {
+  background-color: #218838; /* Темнее зеленая при наведении */
+}
+
+.payment-form .back-to-cart-button {
+  background-color: transparent;
+  color: #007bff;
+  padding: 12px 0;
+  font-size: 16px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.payment-form .back-to-cart-button:hover {
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+.payment-form input::placeholder {
+  color: #aaa; /* Цвет для placeholder */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+  .payment-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .payment-form h2 {
+    font-size: 20px;
+  }
+
+  .payment-form input {
+    font-size: 14px;
+  }
+
+  .payment-form .submit-payment-button {
+    font-size: 16px;
+  }
+
+  .payment-form .back-to-cart-button {
+    font-size: 14px;
+  }
+}
